@@ -67,20 +67,6 @@ The navigation bar appears at the top of the website and provides links to the m
 * Work
 * Contact
 
-A theme button is also included, allowing the user to switch between the website's dark and light appearance.
-
-The navigation links use anchor links such as:
-
-```html
-<a href="#home">HOME</a>
-<a href="#about">ABOUT</a>
-<a href="#work">WORK</a>
-<a href="#contact">CONTACT</a>
-```
-
-This allows visitors to quickly navigate to different sections of the same page.
-
----
 
 ## 5. Hero Section
 
@@ -105,23 +91,6 @@ The hero section also includes a background gradient and a grid overlay to give 
 
 An entrance animation is applied using CSS:
 
-```css
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-```
-
-This creates a smooth animation when the content appears.
-
----
 
 ## 6. About Section
 
@@ -134,92 +103,14 @@ It includes:
 * Location
 * Career availability
 * Personal interests
-
-The section also contains several visual skill icons.
-
-### Orbit Animation
-
-One of the main visual elements of the About section is the animated orbit graphic.
-
-The graphic consists of:
-
-* A glowing center
-* Two elliptical rings
-* Small orbiting dots
-
-CSS animations are used to rotate the orbit rings:
-
-```css
-animation: spinOrbit 12s linear infinite;
-```
-
-and:
-
-```css
-animation: spinOrbitReverse 16s linear infinite;
-```
-
-This creates a continuously moving visual effect without using JavaScript.
-
----
-
+* 
 ## 7. Skills Section
 
 The Skills section displays my technical abilities in organized cards.
 
-The skills are divided into four categories:
-
-### Programming Languages
-
-* HTML/CSS
-* Python
-* C++
-* JavaScript
-
-### Databases
-
-* Oracle SQL
-* MySQL
-
-### Design
-
-* Figma
-* UI/UX Design
-
-### Tools & Technologies
-
-* Git
-* Agile/Scrum
-
-CSS Grid is used to organize the skill cards:
-
-```css
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-```
-
-The cards also have hover effects that slightly move the card upward when the user places the cursor over it.
-
----
-
 ## 8. Recent Work Section
 
 The Recent Work section showcases projects that I have worked on.
-
-Each project contains:
-
-* Project name
-* Project type
-* Project description
-* Project image
-
-### Project 1 — UniStudyMate
-
-### Project 2 — Music Website
-
-### Project Layout
 
 ## 9. What's Next Section
 
@@ -229,169 +120,14 @@ The What's Next section presents my future career goals and an upcoming project.
 
 The section describes my goal of continuing to improve both front-end and back-end development skills, with a particular interest in Oracle databases and reliable system design.
 
-### Upcoming Project
-
-The planned project is an:
-
-**Online Instrument Store**
-
-The website will allow users to browse and explore different musical instruments such as:
-
-
-### Planned Features
-
-The project is planned to include:
-
-1. **Homepage**
-
-
-2. **Product Listing Page**
-
-3. **Cart and Checkout Page**
-
-4. **Contact and Support Page**
-
-### Planned Technology Stack
-
-* HTML
-* CSS
-* JavaScript
-* Java
-* Oracle Database
-
----
-
 ## 10. Contact Section
 
 The Contact section provides visitors with different ways to reach me.
 
-It includes:
-
-* Phone number
-* Email address
-* Location
-* Contact form
-
-The contact form contains:
-
-* Name
-* Email
-* Message
-* Send Message button
-
-
 ## 11. Footer
-
-The footer appears at the bottom of the website.
-
-It contains:
-
-* Portfolio name
-* Social media links
-
-The footer is separated from the rest of the page using a horizontal border.
-
----
-
-## 12. Dark/Light Theme
-
-The website includes a theme-switching feature implemented using **HTML and CSS without JavaScript**.
-
-A checkbox is used to store the theme state:
-
-```html
-<input type="checkbox" id="darkmode-theme">
-```
-
-A label is connected to the checkbox:
-
-```html
-<label for="darkmode-theme" class="darkmode-btn">
-```
-
-CSS then detects whether the checkbox is checked:
-
-```css
-#darkmode-theme:checked ~ .main {
-    background: radial-gradient(...);
-}
-```
-
-Different colors are applied to the background, text, cards, and form elements when the theme changes.
-
----
-
-## 13. Responsive Design
-
-The website was designed to work on different screen sizes.
-
-CSS media queries are used to modify the layout for smaller screens.
-
-For example:
-
-```css
-@media (max-width: 768px) {
-    .title {
-        font-size: 42px;
-    }
-
-    .subtitle {
-        font-size: 26px;
-    }
-}
-```
-
-The project sections also change from multiple columns to a single-column layout on smaller screens.
-
-For example, the skills section changes from two columns to one:
-
-```css
-@media (max-width: 850px) {
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-}
-```
 
 The project and contact sections also become vertically stacked on smaller screens.
 
----
-
-## 14. Animations and Interactive Effects
-
-Several CSS effects were implemented to make the website more interactive.
-
-### Hero Animation
-
-The hero content fades into the page when it loads.
-
-### Hover Effects
-
-Buttons, skill icons, skill cards, project cards, and links have hover effects.
-
-For example:
-
-```css
-.btn-contact:hover {
-    transform: translateY(-3px);
-}
-```
-
-### Orbit Animation
-
-The orbit rings continuously rotate around the center graphic.
-
-### Project Image Effect
-
-Project images slightly zoom in when the user hovers over them:
-
-```css
-.project-image-wrapper:hover .project-img {
-    transform: scale(1.03);
-}
-```
-
----
 
 ## 15. Future Improvements
 
@@ -409,10 +145,4 @@ Possible improvements for future versions include:
 * Connect future projects to an Oracle database.
 * Improve the mobile navigation menu.
 
----
-
-## 16. Conclusion
-
-The Rama Portfolio Website is a personal project created to present my skills, projects, education, and career goals in a professional and visually engaging way.
-
-The project allowed me to strengthen my understanding of **HTML, CSS, Flexbox, CSS Grid, responsive design, animations, and CSS-based interactions**. It also provides a foundation that can be expanded in the future by adding JavaScript, backend functionality, databases, and additional projects.
+figma link: https://www.figma.com/design/49BdRrIf9BTxTiBKZ9ejWo/Developer-Portfolio--Community-?node-id=0-1&t=E2lGbCtuuoyjlQxi-1
